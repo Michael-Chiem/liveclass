@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.6; /* Adjust line height for better spacing between lines */
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2em; /* Set a larger font size for h1 (adjust as needed) */
+}
+
+h2 {
+  font-size: 1.5em; /* Set a larger font size for h2 (adjust as needed) */
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.2em; /* Set a larger font size for other headings (adjust as needed) */
+}
+
+/* Additional styles for better spacing between paragraphs or other elements */
+p {
+  margin-bottom: 1em; /* Adjust the margin bottom for paragraphs (or other elements) */
+}
+
+input, select, option, optgroup, textarea, button,
+pre, code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
