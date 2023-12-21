@@ -79,3 +79,9 @@ footer {
     max-width: 1200px;
   }
 }
+
+a[href$=".css"]:after {
+  content: " 📝";
+  color: #0073e6;
+  margin-left: 5px;
+}

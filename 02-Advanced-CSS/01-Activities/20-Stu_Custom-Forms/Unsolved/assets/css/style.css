@@ -88,7 +88,11 @@ button {
 /* What does this CSS rule do and what does moz and webkit represent? */
 select {
   /* -moz-appearance: none;
-  -webkit-appearance: none; */
+  CSS declaration is a vendor-specific property for Mozilla Firefox. It is used to reset or remove the default styling (appearance) applied by the browser to a particular element. In this case, it's often used to reset the default appearance of form controls like buttons or input elements in Firefox.
+  -webkit-appearance: none; 
+   CSS declaration is a vendor-specific property used in WebKit-based browsers, such as Google Chrome and Safari. Similar to the -moz-appearance property for Firefox, -webkit-appearance is used to control the default styling (appearance) of certain form elements.
+When you set -webkit-appearance: none;, you are instructing the WebKit browser to remove its default styles for the specified element. This can be particularly useful when you want to create custom-styled form controls and override the default appearance applied by the browser.
+  */
   appearance: none;
   background-image: url("../images/arrow.png");
   background-repeat: no-repeat;
@@ -112,12 +116,17 @@ select:hover, button:hover {
   box-shadow: 0 0 5px #999;
 }
 
-/* What does this pseudo-class mean? */
+/* What does this pseudo-class mean? .text-input: This is a class selector that targets HTML elements with the class "text-input." Classes are used to apply styles to multiple elements that share the same class attribute.
+
+:focus: This is a pseudo-class selector in CSS that targets an element when it is in focus. For example, when a user clicks on a text input field, that field enters the :focus state. */
+
 .text-input:focus {
   border-right-width: 5px;
 }
 
-/* What does this pseudo-class mean? */
+/* What does this pseudo-class mean? .text-input: This is a class selector that targets HTML elements with the class "text-input."
+
+:placeholder-shown: This is a pseudo-class selector in CSS that targets an input or textarea element when its placeholder text is being displayed.*/
 .text-input:placeholder-shown {
   border-style: dashed;
 }
@@ -136,13 +145,13 @@ select:hover, button:hover {
   margin-right: 2%;
 }
 
-/* What does this selector do? */
+/* What does this selector do? Putting it all together, the selector .checkbox:checked + label selects a label element that is immediately following a checkbox input with the class "checkbox" when that checkbox is checked. This is often used in conjunction with the adjacent sibling combinator to style a label based on the checked state of a checkbox.*/
 .checkbox:checked + label {
   color: #999999;
   font-style: italic;
 }
 
-/* What does this selector do? */
+/* What does this selector do? Putting it all together, the selector .checkbox:checked + label::after selects the pseudo-element that is generated after a label element, and this label element must be the immediately following sibling of a checked checkbox input with the class "checkbox."*/
 .checkbox:checked + label::after {
   margin-left: 10px;
   font-size: 90%;
