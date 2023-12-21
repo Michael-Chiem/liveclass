@@ -1,5 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+.header {
+    padding: 20px;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.header header {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header header .Chiem {
+    color: greenyellow;
+}
+
+.header section {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header section ul {
+    list-style-type: underline;
+}
+
+.header section ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .main {
     display: flex;
+    margin-left: 10%;
+    margin-right: 3%;
 }
  
 .layout {
@@ -11,15 +62,19 @@
     /* border: solid 1px black; */
     border-left: solid 4px rgba(100, 104, 211, 0.938);
     height: 80vh;
-    width: 50vw;
+    width: 100%;
     margin-left: 10px;
     /* padding: 20px;
     padding-top: 0; */
     padding: 0 20px 20px 20px ;
 }
  
-.section-header {
+.section-side-header {
+    display: flex;
+    word-wrap: break-word;
+    text-align: right;
     margin: 0;
+    font-size: 50px;
 }
  
 .flex-row {
@@ -28,7 +83,7 @@
  
     /* border: solid 1px gray; */
     /* height: 100%; */
-    flex-grow: 1;
+    flex-grow: 2;
  
     /*  */
     gap: 10px;
