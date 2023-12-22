@@ -46,7 +46,7 @@ h3::before {
 /* Added symbols before and after the nav links */
 nav li::before,
 nav li::after {
-  content: '\2766';
+  content: '\2744';
   color: #8ac4ff;
   padding: 1%;
   font-family: cursive;
