@@ -1,0 +1,129 @@
+.main {
+    display: flex;
+    flex-direction: column; /* added this to align the page contents vertically */
+    
+    gap: 40px; /* Added this so theres space inbetween the two sections */
+}
+
+.section { /* Added this to group the header and layout together and display side by side */
+    display: flex;
+}
+
+/* Everything below this line stayed the same */
+
+.layout {
+    display: flex;
+
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 20px;
+    /* border: solid 1px black; */
+    border-left: solid 4px rgba(100, 104, 211, 0.938);
+    height: 250px;
+    width: 50vw;
+    margin-left: 15px;
+    /* padding: 20px;
+    padding-top: 0; */
+    padding: 0 22px 0 22px ;
+}
+
+.layout2 {
+  display: flex;
+
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 20px;
+  /* border: solid 1px black; */
+  border-left: solid 4px rgba(100, 104, 211, 0.938);
+  height: 450px;
+  width: 50vw;
+  margin-left: 15px;
+  /* padding: 20px;
+  padding-top: 0; */
+  padding: 0 22px 0 22px ;
+}
+.section-header {
+
+}
+
+.flex-row {
+    display: flex;
+    /* align-self: stretch; */
+    flex-direction: column;
+    /* border: solid 1px gray; */
+    /* height: 100%; */
+    /* flex-grow: 0; */
+
+    /*  */
+    gap: 10px;
+
+}
+
+.row-one {
+    /* flex-grow: 3; */
+    flex:  3 0 0;
+}
+
+.inner-box{
+    display: flex;
+    border: solid 1px red;
+    align-self: stretch;
+    flex-grow: 1;
+
+    align-items: center;
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+    * {
+        margin: 0;
+    }
+}
+
+.products {
+  
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  /* TODO: Add properties to the cards to achieve the required look */
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 300px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 10px 14px 18px rgba(223, 3, 3, 0.945); /* Drop shadow */
+    transform: rotate(-3deg); /* Rotate slightly */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .card header {
+    padding: 20px;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
